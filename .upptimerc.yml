@@ -1,31 +1,83 @@
-# Change these first
-owner: upptime # Your GitHub organization or username, where this repository lives
-repo: upptime # The name of this repository
+owner: pvollenweider
+repo: benevol-status
 
 sites:
-  - name: Google
-    url: https://www.google.com
-  - name: Wikipedia
-    url: https://en.wikipedia.org
-  - name: Hacker News
-    url: https://news.ycombinator.com
-  - name: Secret Site
-    url: $SECRET_SITE
+  - name: Site et inscriptions
+    url: https://www.benevol.app/
+  - name: Application et base de données
+    url: https://www.benevol.app/api/health
+  - name: Documentation
+    url: https://www.benevol.app/doc
+  - name: Vidéos de formation
+    url: https://medias.benevol.app/front-desk-access/front-desk-access.jpg
 
 status-website:
-  # Add your custom domain name, or remove the `cname` line if you don't have a domain
-  # Uncomment the `baseUrl` line if you don't have a custom domain and add your repo name there
-  cname: demo.upptime.js.org
-  # baseUrl: /your-repo-name
-  logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
-  name: Upptime
-  introTitle: "**Upptime** is the open-source uptime monitor and status page, powered entirely by GitHub."
-  introMessage: This is a sample status page which uses **real-time** data from our [GitHub repository](https://github.com/upptime/upptime). No server required — just GitHub Actions, Issues, and Pages. [**Get your own for free**](https://github.com/upptime/upptime)
+  cname: statut.benevol.app
+  logoUrl: https://www.benevol.app/icon.svg
+  name: benevol.app
+  introTitle: "État du service benevol.app"
+  introMessage: "Cette page vérifie toutes les 5 minutes que benevol.app répond, depuis l'extérieur de son serveur. Une panne y est signalée automatiquement, avec sa durée. Pour préparer votre événement à une panne : [Continuité du service](https://www.benevol.app/continuite-du-service)."
   navbar:
-    - title: Status
+    - title: État
       href: /
-    - title: GitHub
-      href: https://github.com/$OWNER/$REPO
-
-# Upptime also supports notifications, assigning issues, and more
-# See https://upptime.js.org/docs/configuration
+    - title: benevol.app
+      href: https://www.benevol.app/
+    - title: Continuité du service
+      href: https://www.benevol.app/continuite-du-service
+  i18n:
+    activeIncidents: Incidents en cours
+    allSystemsOperational: Tout fonctionne
+    incidentReport: "Incident n° $NUMBER, $DATE"
+    pastIncidents: Incidents passés
+    pastIncidentsResolved: "Résolu en $MINUTES minutes, $POSTS messages"
+    liveStatus: État actuel
+    overallUptime: "Disponibilité globale : $UPTIME"
+    overallUptimeTitle: Disponibilité globale
+    averageResponseTime: "Temps de réponse moyen : $TIME ms"
+    averageResponseTimeTitle: Temps de réponse moyen
+    sevelDayResponseTime: Temps de réponse sur 7 jours
+    responseTimeMs: Temps de réponse (ms)
+    up: En service
+    down: Hors service
+    degraded: Ralenti
+    ms: ms
+    loading: Chargement
+    navGitHub: GitHub
+    footer: "Page de statut indépendante du serveur de benevol.app, faite avec [Upptime](https://upptime.js.org)."
+    rateLimitExceededTitle: Limite de requêtes atteinte
+    rateLimitExceededIntro: "La limite de requêtes vers GitHub est atteinte. Réessayez après $RATE_LIMIT_RESET."
+    rateLimitExceededWhatDoesErrorMean: Que signifie cette erreur ?
+    rateLimitExceededErrorMeaning: Cette page lit ses données chez GitHub, qui limite le nombre de requêtes par heure.
+    rateLimitExceededErrorHowCanFix: Comment faire ?
+    rateLimitExceededCanFixIt: Attendez quelques minutes, puis rechargez la page.
+    error: Erreur
+    errorTitle: Une erreur est survenue
+    errorIntro: La page n'a pas pu charger l'état du service.
+    errorText: Rechargez la page dans quelques minutes.
+    errorHome: Retour à l'accueil
+    pastScheduledMaintenance: Maintenances passées
+    scheduledMaintenance: Maintenance prévue
+    scheduledMaintenanceSummaryStarted: "Commencée le $DATE, pour $DURATION minutes"
+    scheduledMaintenanceSummaryStarts: "Prévue le $DATE, pour $DURATION minutes"
+    startedAt: Commencé le
+    startsAt: Commence le
+    duration: Durée
+    durationMin: "$DURATION minutes"
+    incidentCompleted: Terminé
+    incidentScheduled: Prévu
+    incidentTitle: Détails de l'incident
+    incidentDetails: Détails de l'incident
+    incidentFixed: Résolu
+    incidentOngoing: En cours
+    incidentOpenedAt: Ouvert le
+    incidentClosedAt: Fermé le
+    incidentSubscribe: Suivre les mises à jour
+    incidentViewOnGitHub: Voir sur GitHub
+    incidentCommentSummary: "Publié le $DATE par $AUTHOR"
+    incidentBack: Retour à tous les incidents
+    pastIncidentsDuration: "Durée : $DURATION"
+    duration24H: 24 heures
+    duration7D: 7 jours
+    duration30D: 30 jours
+    duration1Y: 1 an
+    durationAll: Depuis le début
