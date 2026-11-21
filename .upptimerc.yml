@@ -10,13 +10,15 @@ sites:
     url: https://www.benevol.app/doc
   - name: Vidéos de formation
     url: https://medias.benevol.app/front-desk-access/front-desk-access.jpg
+  - name: Référence réseau (OVHcloud)
+    url: https://proof.ovh.net/files/
 
 status-website:
   cname: statut.benevol.app
   logoUrl: https://www.benevol.app/icon.svg
   name: benevol.app
   introTitle: "État du service benevol.app"
-  introMessage: "Cette page vérifie toutes les 5 minutes que benevol.app répond, depuis l'extérieur de son serveur. Une panne y est signalée automatiquement, avec sa durée. Les temps de réponse sont mesurés depuis des serveurs situés aux États-Unis : ils comprennent la traversée de l'Atlantique et dépassent ce que vous constatez depuis l'Europe. Pour préparer votre événement à une panne : [Continuité du service](https://www.benevol.app/continuite-du-service)."
+  introMessage: "Cette page vérifie plusieurs fois par jour que benevol.app répond, depuis l'extérieur de son serveur. Une panne y est signalée automatiquement, avec sa durée. Les temps de réponse sont mesurés depuis des serveurs situés aux États-Unis : ils comprennent la traversée de l'Atlantique et dépassent ce que vous constatez depuis l'Europe. La ligne « Référence réseau (OVHcloud) » mesure, depuis les mêmes serveurs, une petite page d'OVHcloud, l'hébergeur de benevol.app : l'écart avec les autres lignes est le temps propre à benevol.app. Pour préparer votre événement à une panne : [Continuité du service](https://www.benevol.app/continuite-du-service)."
   navbar:
     - title: État
       href: /
