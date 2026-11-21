@@ -16,7 +16,7 @@ status-website:
   logoUrl: https://www.benevol.app/icon.svg
   name: benevol.app
   introTitle: "État du service benevol.app"
-  introMessage: "Cette page vérifie toutes les 5 minutes que benevol.app répond, depuis l'extérieur de son serveur. Une panne y est signalée automatiquement, avec sa durée. Pour préparer votre événement à une panne : [Continuité du service](https://www.benevol.app/continuite-du-service)."
+  introMessage: "Cette page vérifie toutes les 5 minutes que benevol.app répond, depuis l'extérieur de son serveur. Une panne y est signalée automatiquement, avec sa durée. Les temps de réponse sont mesurés depuis des serveurs situés aux États-Unis : ils comprennent la traversée de l'Atlantique et dépassent ce que vous constatez depuis l'Europe. Pour préparer votre événement à une panne : [Continuité du service](https://www.benevol.app/continuite-du-service)."
   navbar:
     - title: État
       href: /
